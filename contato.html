@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Kgb viagens- contato</title>
+		<meta charset ="UTF-8">
+		<meta name="description" content=" Recrutamenlto de candidatos a vagas empresariais">
+		<meta name="keywords" content="Empregos, vagas ,Recrutamento , Salario">
+		<meta name="author" content="Ketlin e  Gabriela">
+		<link rel="shortcut icon" href="../img/icone.png">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	</head>
+	<body class= "fundoimagem">
+		<div id= "geral">
+			<header id="topo"></header>
+			<nav id ='cssmenu' class="align-center">
+				<ul>
+					<li ><a href='index.html'>Empresa</a></li>
+					<li><a href='promocao.html'>Promoções</a></li>
+					<li><a href='galeria.html'>Galeria</a></li>
+					<li class='active'><a href='contato.html'>Contato</a></li>
+				</ul>
+			</nav>
+			<section id ="conteudo">
+				<h2> Cadastro de clientes</h2>
+				<hr>
+				<!-- espaço do formulario-->
+
+				<fieldset class="maior"> 
+				<form method="get" name="form1" action="controler/candidatocontrole.php">				
+
+							<div class="form-group">
+								<label> Nome: </label>
+								<input type="text" name="nome" required="required" size="50" placeholder="Digite aqui seu nome)"><br>
+							</div>
+							<label> Cidade: </label>
+								<input type="text" name="cidade" required="required" size="20"> &nbsp;&nbsp;&nbsp;
+							<label> Estado: </label>
+							<select id="estado" name="estado" required="required">
+								<option value="Selecione">Selecione</option>
+								<option value="AC">Acre</option>
+								<option value="AL">Alagoas</option>
+								<option value="AP">Amapá</option>
+								<option value="AM">Amazonas</option>
+								<option value="BA">Bahia</option>
+								<option value="CE">Ceará</option>
+								<option value="DF">Distrito Federal</option>
+								<option value="ES">Espírito Santo</option>
+								<option value="GO">Goiás</option>
+								<option value="MA">Maranhão</option>
+								<option value="MT">Mato Grosso</option>
+								<option value="MS">Mato Grosso do Sul</option>
+								<option value="MG">Minas Gerais</option>
+								<option value="PA">Pará</option>
+								<option value="PB">Paraíba</option>
+								<option value="PR">Paraná</option>
+								<option value="PE">Pernambuco</option>
+								<option value="PI">Piauí</option>
+								<option value="RJ">Rio de Janeiro</option>
+								<option value="RN">Rio Grande do Norte</option>
+								<option value="RS">Rio Grande do Sul</option>
+								<option value="RO">Rondônia</option>
+								<option value="RR">Roraima</option>
+								<option value="SC">Santa Catarina</option>
+								<option value="SP">São Paulo</option>
+								<option value="SE">Sergipe</option>
+								<option value="TO">Tocantins</option>
+								<option value="ES">Estrangeiro</option>
+							</select>
+								<br>
+								<div class="form-group">
+									<label> Telefone: </label>
+									<input type="number" name="telefone" size="30" required="required"> &nbsp;&nbsp;&nbsp;
+								</div>
+								<div class="form-group" >
+									<label>E-mail:</label>
+									<input type="email" name="email" size="30" required="required">
+								<br>
+								</div>
+							<div class="form-group">
+								<label>CPF: </label>
+								<input type="text" name="cpf" required="required">
+							</div>
+							<label> Pacote Escolhido </label>
+							<select id="pacoteEscolhido" name="pacoteEscolhido" required="required">
+								<option value="Selecione">Selecione</option>
+								<option value="1">Caribe</option>
+								<option value="2">Porto de Galinhas-PE</option>
+								<option value="3">Lisboa</option>
+								<option value="4">Paris</option>
+								<option value="5">Cancun</option>
+								<option value="6">Florianópolis</option>
+								<option value="7">Orlando</option>
+								<option value="8">Santiago</option>
+								
+			
+							</select>
+								<br>
+							<div >
+								<label> Quantidade de Pessoas </label>
+							<select id="quantidadePessoas" name="quantidadePessoas" required="required">
+								<option value="Selecione">Selecione</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>	
+							<div class="form-group" required="required">
+								<label> CAFÉ DA MANHÃ: </label>
+								<input type="radio" name="cafe" value="Sim">Sim
+								<input type="radio" name="cafe" value="Nao">Não<br>
+							</div>
+						<input type="reset" name="limpa" value="Limpar"  class="btn btn-dark">
+						<input type="submit" name="envia" value="Enviar"  class="btn btn-dark">
+					</fieldset>
+				</form>
+				<!-- fim formulario-->
+			</section>
+			<footer id="rodape">
+				<br><cite>agenciarecrutamento@efeitomais.com.br</cite>
+			</footer>
+		</div>
+	</body>
+</html>
